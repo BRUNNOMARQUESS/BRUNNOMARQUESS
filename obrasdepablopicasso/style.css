@@ -1,0 +1,39 @@
+@charset "UFT-8";
+
+body {
+    background-color: #d8c09d;
+}
+
+h3,
+p,
+ul,
+li {
+    color: #514644;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: #514644;
+    text-decoration: none;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 30px;
+
+}
+
+:hover a {
+    scale: 1.4;
+}
+
+.tudo {
+    width: 960px;
+    margin: auto;
+}

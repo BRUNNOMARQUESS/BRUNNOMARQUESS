@@ -49,6 +49,27 @@
             <b>&#9734;25/10/1881 <br>&#10014;08/04/1973</b>
         </main>
     </div>
+    <input type="range" min="10" max="100" value="50" id="slider">
+    <button  class="b9" onclick="changeTextColor()">Mudar Cor do Texto</button> 
+    <p id="text">Bruno Vinicius and Rosana Even</p>   
+    <script>
+        var slider = document.getElementById("slider");
+        var textElement = document.getElementById("text");
+      
+        slider.addEventListener("input", function() {
+          var size = this.value + "px";
+          textElement.style.fontSize = size;
+        });
+        var button = document.querySelector("button");
+  var textElement = document.getElementById("text");
+  var colors = ["red", "green", "blue", "yellow", "purple"];
+  var currentIndex = 0;
+
+  function changeTextColor() {
+    textElement.style.color = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+  }
+      </script>
 </body>
 
 </html>
